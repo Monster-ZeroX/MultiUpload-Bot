@@ -45,8 +45,8 @@ FileSize: {humanbytes(amjana.file.size)}
 	async with anjana.action(event.chat_id, 'document'):
 		await msg.edit("Now Uploading to MixDrop")
 		data = {
-			'email': 'plasmodi@makesnte.com',
-			'key': 'crLFRApkOWtQvDzrWwtJ',
+			'email': 'monsterzerox1@gmail.com',
+			'key': 'mogfIAyBh6swFc6tqW7',
 		}
 		url = "https://ul.mixdrop.co/api"
 		r = post(url, files={'file': open(f'{result.name}','rb')}, data=data)
@@ -60,7 +60,7 @@ Server: MixDrop
 NOTE: Files will be deleted after 60 days of inactivity.'''
 	await msg.edit(hmm, buttons=(
 		[Button.url('📦 Download', "https://mixdrop.co/f/"+r.json()['result']['fileref'])],
-		[Button.url('Support Chat 💭', 't.me/hxsupport')]
+		[Button.url('Support Chat 💭', 't.me/FZBOTS')]
 		))
 
 	os.remove(result.name)
